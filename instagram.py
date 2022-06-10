@@ -5,6 +5,7 @@ from datetime import datetime
 import pandas as pd
 from glob import glob
 import orjson
+from itertools import dropwhile, takewhile
 
 def get_instagram_posts(username, startdate, enddate,pwd,yourusername):
     # Create an instaloader object with parameters
